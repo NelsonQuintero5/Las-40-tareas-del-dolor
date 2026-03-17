@@ -1,0 +1,18 @@
+print("="*50)
+print("SEPARADOR DE PARES")
+print("="*50)
+print("")
+
+print("introduzca su secuencia de numeros: ")
+print(">por favor no incluya texto (espacios si, comas no se (ya prove, no lo hagas))\n")
+
+lista1 = input("").split()
+
+lista2 = [int(i) for i in lista1]
+
+def filtrar_pares(numeros):
+    for i in numeros:
+        if i % 2 == 0:
+            print(i) 
+
+filtrar_pares(lista2)
