@@ -1,0 +1,20 @@
+print("="*50)
+print("CONTADOR DE VOCALES DE LAS FRASES QUE ESCRIBAS AQUI MISMO, SI, COMO OISTE")
+print("="*50)
+print("")
+
+def contar_vocales(palabra):
+    contador = 0
+    vocales = ("a","e","i","o","u","A","E","I","O","U")
+
+    for letras in palabra:
+        if letras in vocales:
+            contador +=1
+
+    return contador
+
+frase = input("introduzca su oracion pliase: ")
+
+resultado = contar_vocales(frase)
+
+print(f"La oracion tiene un total de {resultado} vocales.")
